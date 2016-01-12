@@ -1,0 +1,7 @@
+<resources>>
+
+    <style name="ActivityTheme" parent="android:Theme.Holo.Light">
+        <item name="android:colorPrimary">#009688</item>
+
+    </style>
+</resources>

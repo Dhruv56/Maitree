@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.maitree.DeveloperActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/view5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                     />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/view"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/view5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                     />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/view2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/meeeeee" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/view3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/view2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/view4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/view3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view5"
+                    android:layout_centerHorizontal="true"
+                    android:text="Chirag Pandya"
+                    android:textSize="30dp" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:layout_centerHorizontal="true"
+                    android:text="Pathik Patel"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view2"
+                    android:layout_centerHorizontal="true"
+                    android:text="Dhruv Soni"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view3"
+                    android:layout_centerHorizontal="true"
+                    android:text="Staffone Christian"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view4"
+                    android:layout_centerHorizontal="true"
+                    android:text="Harsh Dalwadi"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView10"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/chirag_email"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#1747f2" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/pathik_email"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#1747f2" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/dhruv_email"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#1747f2" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/staffone_email"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#1747f2" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView4"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="20dp"
+                    android:text="@string/harsh_email"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#1747f2" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

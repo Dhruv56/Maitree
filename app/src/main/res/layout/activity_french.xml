@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+     tools:context=".FrenchActivity"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal"
+        android:background="#ffffffff">
+
+        <ToggleButton
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="New ToggleButton"
+            android:id="@+id/tb"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+
+            android:background="@drawable/toggle_selector"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:textOff=""
+            android:textOn=""
+
+            android:background="@drawable/speaker96"
+            android:id="@+id/toggleButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="English"
+            android:id="@+id/textView9"
+           android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tb"
+            android:layout_toStartOf="@+id/tb" />
+
+
+    </RelativeLayout>
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:background="#d3ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:id="@+id/Title"
+        android:textSize="16pt"
+        android:paddingLeft="5dp"
+
+        android:layout_below="@+id/tb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tb"
+        android:layout_alignEnd="@+id/tb"
+        android:layout_weight="0.04" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="3dp"
+        android:id="@+id/dec_place"
+        android:layout_weight="0.39" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="185dp"
+            android:id="@+id/imageView"
+
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="185dp"
+            android:id="@+id/imageView1"
+            android:padding="10dp"
+
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="3dp"
+            android:id="@+id/extra_dec_place"
+            android:layout_weight="0.39" />
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
